@@ -1,6 +1,9 @@
 import "./styles/Heading.css"
 
-function Heading(){
+function Heading({
+    currScore,
+    bestScore
+}){
     return(
         <div id="heading">
             <div>
@@ -8,8 +11,8 @@ function Heading(){
                 <p>Get points by clicking on an image but don't click on any more than once!</p>
             </div>
             <div>
-                <p>Score: 0</p>
-                <p>Best Score: 0</p>
+                <p>Score: {currScore}</p>
+                <p>Best Score: {bestScore}</p>
             </div>
         </div>
     )
